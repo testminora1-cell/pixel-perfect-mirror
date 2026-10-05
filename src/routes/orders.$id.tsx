@@ -18,8 +18,8 @@ export const Route = createFileRoute("/orders/$id")({
 
 function OrderDetail() {
   const { id } = Route.useParams();
-  const o = orders.find((x) => x.id === id) ?? orders[1];
-  const items = [products[0], products[6]];
+  const o = orders.find((x) => x.id === id) ?? orders[1]!;
+  const items = [products[0]!, products[6]!];
   return (
     <div className="container-x pb-28 pt-14 md:pt-20">
       <Link to="/orders" className="link-u text-sm text-muted-foreground">← Захиалгууд</Link>

@@ -112,9 +112,9 @@
   .display { @apply font-serif text-5xl md:text-7xl lg:text-[5.5rem]; }
   .h-section { @apply font-serif text-4xl md:text-5xl; }
   .btn { @apply inline-flex h-12 items-center justify-center gap-2 px-7 text-[13px] font-semibold uppercase tracking-[0.14em] transition-colors duration-300 disabled:opacity-50; }
-  .btn-primary { @apply btn bg-espresso text-espresso-foreground hover:bg-pistachio hover:text-espresso; }
-  .btn-outline { @apply btn border border-foreground/80 text-foreground hover:bg-foreground hover:text-background; }
-  .btn-pistachio { @apply btn bg-pistachio text-espresso hover:bg-espresso hover:text-espresso-foreground; }
+  .btn-primary { @apply inline-flex h-12 items-center justify-center gap-2 px-7 text-[13px] font-semibold uppercase tracking-[0.14em] transition-colors duration-300 disabled:opacity-50 bg-espresso text-espresso-foreground hover:bg-pistachio hover:text-espresso; }
+  .btn-outline { @apply inline-flex h-12 items-center justify-center gap-2 px-7 text-[13px] font-semibold uppercase tracking-[0.14em] transition-colors duration-300 disabled:opacity-50 border border-foreground/80 text-foreground hover:bg-foreground hover:text-background; }
+  .btn-pistachio { @apply inline-flex h-12 items-center justify-center gap-2 px-7 text-[13px] font-semibold uppercase tracking-[0.14em] transition-colors duration-300 disabled:opacity-50 bg-pistachio text-espresso hover:bg-espresso hover:text-espresso-foreground; }
   .link-u { @apply relative after:absolute after:-bottom-1 after:left-0 after:h-px after:w-0 after:bg-current after:transition-all hover:after:w-full; }
   .field { @apply h-12 w-full border-0 border-b border-input bg-transparent px-0 text-[15px] outline-none transition-colors placeholder:text-muted-foreground/70 focus:border-espresso; }
   .field-label { @apply mb-1 block text-[11px] font-semibold uppercase tracking-[0.16em] text-muted-foreground; }

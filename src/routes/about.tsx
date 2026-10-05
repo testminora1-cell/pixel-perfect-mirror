@@ -47,7 +47,7 @@ function About() {
         <h2 className="h-section mt-3">Гар бүрийн ард хүн бий</h2>
         <div className="mt-12 grid grid-cols-2 gap-6 md:grid-cols-4">
           {["Мастер gelatiere", "Үйлдвэрлэлийн ахлагч", "Салбарын менежер", "Barista"].map((r, i) => (
-            <div key={r}><img src={products[i + 3].image} alt="" loading="lazy" className="aspect-[3/4] w-full object-cover grayscale-[30%]" /><p className="mt-3 font-serif text-xl">{r}</p><p className="text-xs text-muted-foreground">Нэр удахгүй</p></div>
+            <div key={r}><img src={products[i + 3]!.image} alt="" loading="lazy" className="aspect-[3/4] w-full object-cover grayscale-[30%]" /><p className="mt-3 font-serif text-xl">{r}</p><p className="text-xs text-muted-foreground">Нэр удахгүй</p></div>
           ))}
         </div>
       </section>

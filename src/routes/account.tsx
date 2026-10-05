@@ -18,9 +18,9 @@ function Account() {
       </div>
       <section className="mt-12">
         <div className="flex items-end justify-between"><h2 className="font-serif text-3xl">Сүүлийн захиалга</h2><Link to="/orders" className="link-u text-sm">Бүгд →</Link></div>
-        <Link to="/orders/$id" params={{ id: orders[1].id }} className="mt-5 flex items-center justify-between border border-border p-5 hover:border-espresso">
-          <div><p className="font-semibold">{orders[1].id}</p><p className="text-sm text-muted-foreground">{orders[1].date} · {fmt(orders[1].total)}</p></div>
-          <span className={`pill ${statusTone(orders[1].status)}`}>{orders[1].status}</span>
+        <Link to="/orders/$id" params={{ id: orders[1]!.id }} className="mt-5 flex items-center justify-between border border-border p-5 hover:border-espresso">
+          <div><p className="font-semibold">{orders[1]!.id}</p><p className="text-sm text-muted-foreground">{orders[1]!.date} · {fmt(orders[1]!.total)}</p></div>
+          <span className={`pill ${statusTone(orders[1]!.status)}`}>{orders[1]!.status}</span>
         </Link>
       </section>
       <section id="address" className="mt-12 grid gap-6 sm:grid-cols-2">
