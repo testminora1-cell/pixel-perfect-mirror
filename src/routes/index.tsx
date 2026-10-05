@@ -124,7 +124,7 @@ function Home() {
         </div>
         <div className="grid grid-cols-2 gap-3 md:grid-cols-4 md:grid-rows-2 md:gap-4">
           <img src={images.shop} alt="" loading="lazy" className="col-span-2 aspect-[4/3] h-full w-full object-cover md:row-span-2 md:aspect-auto" />
-          {[products[2], products[5], products[7], products[1]].map((p) => (
+          {[products[2]!!, products[5]!!, products[7]!!, products[1]!!].map((p) => (
             <img key={p.slug} src={p.image} alt={p.name} loading="lazy" className="aspect-square w-full object-cover" />
           ))}
         </div>

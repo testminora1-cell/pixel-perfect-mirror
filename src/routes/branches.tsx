@@ -41,7 +41,7 @@ function Branches() {
           {pins.map((p, i) => (
             <button key={i} onClick={() => setActive(i)} style={{ left: `${p.x}%`, top: `${p.y}%` }} className="absolute -translate-x-1/2 -translate-y-full">
               <span className={`flex items-center gap-2 whitespace-nowrap px-3 py-1.5 text-xs font-semibold transition-colors ${active === i ? "bg-espresso text-espresso-foreground" : "bg-background text-foreground"}`}>
-                <MapPin className="h-3.5 w-3.5" />{branches[i].name}
+                <MapPin className="h-3.5 w-3.5" />{branches[i]?.name}
               </span>
             </button>
           ))}

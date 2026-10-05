@@ -19,8 +19,8 @@ export const linePrice = (l: CartLine) =>
 
 export function CartProvider({ children }: { children: ReactNode }) {
   const [lines, setLines] = useState<CartLine[]>(() => [
-    { product: products[0], size: "cup", qty: 2 },
-    { product: products[6], size: "500", qty: 1 },
+    { product: products[0]!, size: "cup", qty: 2 },
+    { product: products[6]!, size: "500", qty: 1 },
   ]);
   const add = (slug: string, size = "cup", qty = 1) =>
     setLines((ls) => {

@@ -16,7 +16,7 @@ export function AccountShell({ title, children }: { title: string; children: Rea
       <div className="mt-12 grid gap-10 md:grid-cols-12">
         <nav className="no-scrollbar flex gap-6 overflow-x-auto border-b border-border md:col-span-3 md:flex-col md:gap-0 md:border-b-0 md:border-r">
           {items.map((it) => (
-            <Link key={it.label} to={it.to} hash={"hash" in it ? it.hash : undefined} activeOptions={{ exact: true, includeHash: true }} className="shrink-0 py-3 text-sm text-muted-foreground hover:text-foreground md:border-l-2 md:border-transparent md:pl-4" activeProps={{ className: "!text-foreground md:!border-espresso font-semibold" }}>{it.label}</Link>
+            <Link key={it.label} to={it.to} {...("hash" in it ? { hash: it.hash } : {})} activeOptions={{ exact: true, includeHash: true }} className="shrink-0 py-3 text-sm text-muted-foreground hover:text-foreground md:border-l-2 md:border-transparent md:pl-4" activeProps={{ className: "!text-foreground md:!border-espresso font-semibold" }}>{it.label}</Link>
           ))}
           <Link to="/login" className="shrink-0 py-3 text-sm text-berry md:pl-4">Гарах</Link>
         </nav>
